@@ -58,7 +58,14 @@ label{
     margin-top: 5px;
     margin-bottom: 5px;  
 }
- 
+
+#togglePassword{
+    border-radius: 10px;
+    margin-left: 31%;
+    margin-top: 1%;
+
+}
+
 #subButton{
     margin-top: 20px;
     width: 150px;

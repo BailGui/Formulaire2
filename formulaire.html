@@ -24,6 +24,7 @@
  
             <div><label class="mdp" for="user_mdp">Mot de passe</label>
                 <input type="text" id="password" name="user_mdp" required /></div>
+                <button id="togglePassword">Montrer</button>
                 <p id="mdpErreur"> </p>
    
           <input type="submit" value="S'inscrire" id="subButton">
@@ -34,6 +35,14 @@
  
 </fieldset>
 <script>
+    e=true;
+function ShowHide() {
+    if(e){
+        document.getElementById("password").setAttribute("type","text");
+        e=false;
+    }
+   
+  }
     const myForm = document.getElementById("myForm");
     const subButton = document.getElementById("subButton");
     const mdp = document.getElementById("mdpErreur");
